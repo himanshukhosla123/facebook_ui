@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrapcss/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+       <div class="container">
+           <ul class="pull-left">
+               <li><a href="">Cloudify</a></li>
+           </ul>
+           <div class="pull-left"><input type="text" placeholder="Search"><button id="search"><i class="fa fa-search" area-hidden="true"></i></button> </div>
+           <ul class="pull-right">
+               <li><a href=""><i class="fa fa-home" area-hidden="true"></i></a></li>
+               <li><a href=""><i class="fa fa-edit" area-hidden="true"></i></a></li>
+               <li><a href=""><i class="fa fa-plus" area-hidden="true"></i></a></li>
+               <li><a href=""><i class="fa fa-setting" area-hidden="true"></i></a></li>
+           </ul>       
+       </div>
+    </header>
+    <div class="container main">
+      <div class="nav_bar">
+       <div id="logged_user" class="row no-mrg bg-white">
+        <div class="user_img pull-left">
+            <img src="assets/images/user1.png" class="img-responsive img-circle" alt="User 1">
+        </div>
+        <div class="user_info pull-left">
+            <h5>Ashfaq Ahmed</h5>
+            <h6>ashfaq@fellowapp.co</h6>
+        </div>
+      </div>
+      </div>
+      <div class="posts_section">
+        <div class="post_container col-sm-7 col-xs-12">
+
+            
+                <div class="post create_post">
+                        <div class="post-header">
+                            Ashfaq Ahmed
+                            <span class="pull-right dropdown options"><i class="fa fa-ellipsis-v"></i></span>
+                        </div>
+                        <div class="post-body">
+                        <textarea name="" id="" class="form-control" rows="10">
+                            
+                        </textarea>
+                        </div>
+                        <div class="post-footer row">
+                        
+                        </div>
+                    </div>
+
+           <div class="row filter_options bg-white">
+              <div class="col-xs-6 text-center">
+               <div class="dropdown">
+                  <a class="btn btn-default dropdown-toggle" type="button" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Filter
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+           </div>
+              <div class="col-xs-6 text-center">
+               <div class="dropdown">
+                <a class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter
+                <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                </ul>
+                </div>
+           </div>
+           </div>
+           
+            <div class="post">
+                <div class="post-header row">
+                    <div class="user_thumb">
+                        <img src="assets/images/user1.png" class="img-responsive img-circle" alt="User 1">
+                    </div>
+                    <div class="user_action pull-left">
+                        <a href="#">Ashfaq Ahmed</a>
+                    <span class="posted_time"><i class="fa fa-star"></i> 10 hrs</span>
+                    </div>
+                    <span class="pull-right dropdown options">
+                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" id="dropdown1" type="button" aria-haspopup="true" aria-expanded="true"> 
+                     <i class="fa fa-ellipsis-v"></i></a>
+                          <ul class="dropdown-menu" >
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                          </ul>
+                    </span>
+                </div>
+                <div class="post-body">
+                    <p>This is Ashfaq Ahmed post</p>
+                    <img src="http://quotesnhumor.com/wp-content/uploads/2015/11/Top-40-Minion-Jokes-funny-memes.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="post-footer">
+                      <div class="current_post_options">
+                       <i class="fa fa-thumbs-up"></i>  20 |
+                        <i class="fa fa-thumbs-down"></i>  50 |
+                        <i class="fa fa-comments-o"></i>  550 
+                      </div>
+                      <div class="padd_8 border-top">
+                       <span class="post_options"><i class="fa fa-thumbs-o-up"></i> Like </span>
+                    <span class="post_options"><i class="fa fa-thumbs-o-down"></i> Dislike</span>
+                <span><i class="fa fa-comments-o"></i> Comments</span>
+                </div>
+          </div>
+          <div class="comment_box">
+              <div class="comment_container">
+                 <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class=" pull-left comment_box"><input type="text" class="" placeholder="Comment Below"></div>
+                 </div>
+                  <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing .
+                      <div><a href="">Like</a> <a href="">Reply</a> 
+                      <span class="posted_time">4 hrs</span>
+                      </div>
+                      </div>
+                    <span class="pull-right dropdown options">
+                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" id="dropdown1" type="button" aria-haspopup="true" aria-expanded="true"> 
+                     <i class="fa fa-ellipsis-v"></i></a>
+                          <ul class="dropdown-menu" >
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                          </ul>
+                    </span>
+<!--
+                    <div class="child_comment_container">
+                        <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing child.</div>
+                        </div>
+                    </div>
+-->
+                  </div>
+              </div>
+          </div>
+          </div>
+           
+           
+           </div>
+            </div>
+            
+            
+        <div class="tasks col-sm-4">
+         <div class="tasks_container bg-white">
+             <div>
+                 <p><input type="checkbox"> Demo task</p>
+             </div>
+         </div>
+          
+        </div>
+      </div>
+    <footer>
+        
+    </footer>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--    <script src="assets/js/bootstrap.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js" defer></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/controller.js" defer></script>
+    <script src="assets/js/model.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js" async></script>
+</body>
+</html>   

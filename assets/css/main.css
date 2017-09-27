@@ -1,0 +1,247 @@
+body{
+    background-color: #e9ebee;
+    color: #1d2129;
+    font-size: 12px;
+    padding-top:50px; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    background-color:#4267B2;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.user_img{
+    width:50px;
+    height:50px;
+}
+header ul>li>a,header ul>li>a:hover{
+    color: white;
+    text-decoration: none;
+    padding:5px;
+    margin: 8px 0px 8px;
+    font-size:16px;
+    border-radius: 2px;
+}
+header ul>li>a:hover{
+    background-color: #3B5DA0;
+    
+}
+header ul{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+header ul>li{
+    padding:10px 0px;
+    display: inline-block;
+}
+header input{
+    width: 300px;
+    padding:5px;
+    margin: 7px 0px;
+    border-radius: 2px 0px 0px 2px; 
+    border:none;
+    margin-left: 15px;
+}
+header #search{
+    color: #1d2129;
+    padding:2px 15px 5px;
+    margin:7px 0px;
+    border: none;
+    font-size: 14px;
+    border-radius: 0px 2px 2px 0px; 
+    background-color:#f6f7f9;
+}
+
+.bg-white,.bg-white-hover:hover,.post{
+background-color: white;    
+border: 1px solid #dddfe2;
+border-radius:3px;
+    padding:12px;
+}
+.no-mrg{
+    margin: 0px;
+}
+.nav_bar{
+    width:200px;
+    float: left;
+}
+.post_section{
+    float: left;
+    width: calc(100% - 200px);
+}
+.user_img{
+    margin-right: 10px;
+}
+#logged_user{
+    padding: 5px 0px;
+}
+.user_info h6{
+    margin-bottom:0px;
+}
+.user_info{
+    width: calc(100% -70px);
+}
+
+.post{
+    margin:20px 0px;
+    padding-bottom: 0px; 
+}
+.post-header{
+    border-radius:2px 2px 0 0;
+    font-weight:bold;
+    font-size:14px;
+}
+.post-header a{
+    display: inline-block;
+}
+.post-header .posted_time,.post-footer .posted_time{
+    color:#90949c;
+    font-size: 12px;
+    display: block;
+    font-weight: lighter;
+}
+.create_post{
+    margin-top:0px;
+    padding-top:0px;
+}
+.create_post .post-header{
+    background-color: #F6F7F9;
+    margin:0px 0px 5px;
+}
+
+.post-header .user_thumb{
+    width: 40px;
+    height:40px;
+    float:left;
+    margin-right:10px;
+}
+.post-header .user_action{margin-top: 2px;}
+.row{
+    margin: 0px;
+}
+
+.post-body{    
+    font-size: 14px;
+    margin:6px 0px 0px;
+    padding-bottom: 10px;
+}
+.post-body p{margin-bottom: 0px;}
+.post-body img{
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    border:1px solid #ccc;
+    margin-top:5px;
+}
+.border-top{
+    border-top:1px solid #dddfe2;
+}
+.options{
+    font-size:16px;
+    margin-right:5px;
+}
+.post-footer{
+    font-size:14px;
+}
+.padd_8{
+    padding: 8px 0px;
+}
+.post-footer span{
+    margin-right: 20px;
+    color: #616770;
+    font-weight:bold;
+}
+.post-footer .fa{
+    font-size:16px;
+}
+no-float{
+    float: none;
+}
+a{
+    color: #365899;
+}
+.dropdown-toggle .fa{
+    padding:0px 5px;
+}
+.post-footer .post_options:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.post-footer .post_options.active,.current_post_options .fa{
+    color:#4080FF;
+}
+.post-footer .post_options.active .fa{
+    font-size:19px;
+}
+.current_post_options{
+    padding:0px 0px 5px;
+}
+.post .comment_box{
+    background-color:#F6F7F9;
+    margin: 0px -12px;
+}
+.post .comment .comment_box{
+    width:calc(100% - 60px);
+    margin-left: 0px;
+}
+.post .comment .comment_box input,.post .comment .comment_box input:focus{
+    width: 100%;
+    border-radius:20px;
+    border: 1px solid #dddfe2;
+    outline: none;
+    height: 34px;
+    padding:0px 10px;
+    font-size:14px;
+}
+
+.post .comment{
+    padding:5px 0px;
+    margin:0px 12px;
+}
+.post .comment_box .user_thumb{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.post .comment_container{
+    padding: 10px 0px;
+}
+.post .comment_text,.post-header+a{
+    width:505px;
+}
+.post .comment_text a{
+    margin-right:7px;
+    font-size: 12px
+}
+
+
+.post .child_comment_container{
+    border:2px solid #ccc;
+    
+}
+.post .child_comment_container .user_thumb{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.tasks{
+    width: 275px;
+    padding: 0px;
+}
+
+
+.filter_options{
+    margin:-10px 0px;
+    background: white;
+    padding: 5px 0px;
+}
+.filter_options .btn{
+    width:100%;
+    border-radius: 1px;
+}
+.filter_options .dropdown-menu{
+    right: 0px;
+}
