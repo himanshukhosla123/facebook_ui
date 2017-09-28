@@ -341,3 +341,22 @@ a{
 }
 
 .no-border{border: none;}
+
+
+.todo_container h3{
+    margin-top: 0px;
+    border-bottom: 1px solid #dddfe2;
+}
+.todo_container .nav>li>label{
+    padding:7px 1px;
+    display: block;
+    margin-bottom: 0px;
+}
+.todo_container .nav input{
+    margin: 0px;
+    margin-right: 5px;
+}
+.todo_container form input{
+    border-radius: 2px 0px 0px 2px;
+    
+}
