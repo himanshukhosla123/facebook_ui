@@ -319,6 +319,10 @@ a{
 .no-mrg{
     margin: 0px;
 }
+.nav_bar,.tasks{
+    position: sticky;
+    top:50px;
+}
 .nav_bar .fa-facebook,.nav_bar .fa-twitter,.nav_bar .fa-star{
     color: white;
     background: red;
