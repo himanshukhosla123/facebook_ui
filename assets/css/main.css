@@ -8,14 +8,25 @@ body{
 header{
     background-color:#4267B2;
     color: white;
-    position: absolute;
+    position:fixed;
     top: 0px;
+    z-index: 200;
     left: 0px;
     width: 100%;
 }
 .user_img{
     width:50px;
     height:50px;
+}
+.post textarea,.post textarea:focus{
+    resize:none;
+    font-size:16px;
+    width: calc(100% - 60px);
+    border: none;
+    min-height:85px;
+    line-height: 20px;
+    padding:8px 10px;
+    outline: none;
 }
 header ul>li>a,header ul>li>a:hover{
     color: white;
@@ -55,16 +66,34 @@ header #search{
     border-radius: 0px 2px 2px 0px; 
     background-color:#f6f7f9;
 }
-
 .bg-white,.bg-white-hover:hover,.post{
 background-color: white;    
 border: 1px solid #dddfe2;
 border-radius:3px;
     padding:12px;
 }
-.no-mrg{
-    margin: 0px;
+
+.nav_bar .nav>li>a{
+    padding:6px;
+    font-size: 13px;
 }
+.nav_bar a{
+    color: #1d2129;
+}
+.nav_bar h5{
+    font-weight: bold;
+}
+
+.nav_bar .nav>li>a:hover{
+    background-color: white !important;
+border: 1px solid #dddfe2;
+border-radius:3px;
+    padding: 5px;
+}
+.nav_bar .fa{
+    padding:3px 5px;
+}
+.fa{padding-right: 5px;}
 .nav_bar{
     width:200px;
     float: left;
@@ -85,7 +114,6 @@ border-radius:3px;
 .user_info{
     width: calc(100% -70px);
 }
-
 .post{
     margin:20px 0px;
     padding-bottom: 0px; 
@@ -108,12 +136,42 @@ border-radius:3px;
     margin-top:0px;
     padding-top:0px;
 }
+.post-header-container{
+    margin:0px -12px
+}
 .create_post .post-header{
     background-color: #F6F7F9;
-    margin:0px 0px 5px;
+    padding:5px 12px;
+    font-weight: 500;
 }
-
-.post-header .user_thumb{
+.create_post .post-header span{
+    padding:0px 10px;
+    border-right: 1px solid #ccc;
+}
+.create_post .post-footer{
+    padding: 5px 0px;
+}
+.btn{
+    padding:2px 15px;
+    border-radius:1px;
+    background-color:#f6f7f9;
+    border:1px solid #ced0d4;
+    color: #4b4f56;
+}
+.btn:hover{
+    background: #E9EBEE;
+}
+.btn-primary{
+    color: white;
+    background:#4267b2 !important;
+    border-color:#4267b2;
+}
+.btn-primary:hover{
+    background:#365899;
+}
+.create_post .post-body
+{padding: 0px;}
+.post-header .user_thumb,.create_post .user_thumb{
     width: 40px;
     height:40px;
     float:left;
@@ -140,7 +198,8 @@ border-radius:3px;
 }
 .options{
     font-size:16px;
-    margin-right:5px;
+    border:none !important;
+    padding: 0px 5px !important;
 }
 .post-footer{
     font-size:14px;
@@ -172,11 +231,21 @@ a{
 .post-footer .post_options.active,.current_post_options .fa{
     color:#4080FF;
 }
+.create_post .post-header{
+    color: #595C63;
+    font-weight: bold;
+    border-bottom: 1px solid #dddfe2;
+}
 .post-footer .post_options.active .fa{
     font-size:19px;
 }
 .current_post_options{
     padding:0px 0px 5px;
+    background: transparent;
+}
+.current_post_options span{
+    margin:0px 5px;
+    border-right: 1px solid #dddfe2;
 }
 .post .comment_box{
     background-color:#F6F7F9;
@@ -208,8 +277,9 @@ a{
 .post .comment_container{
     padding: 10px 0px;
 }
-.post .comment_text,.post-header+a{
-    width:505px;
+.post .comment_text,.post-header .user_action+a{
+/*    width:505px;*/
+    width: calc(100% - 70px);
 }
 .post .comment_text a{
     margin-right:7px;
@@ -218,7 +288,7 @@ a{
 
 
 .post .child_comment_container{
-    border:2px solid #ccc;
+    border-left:2px solid #ccc;
     
 }
 .post .child_comment_container .user_thumb{
@@ -240,8 +310,34 @@ a{
 }
 .filter_options .btn{
     width:100%;
-    border-radius: 1px;
+    padding:5px 10px;
 }
 .filter_options .dropdown-menu{
     right: 0px;
 }
+
+.no-mrg{
+    margin: 0px;
+}
+.nav_bar .fa-facebook,.nav_bar .fa-twitter,.nav_bar .fa-star{
+    color: white;
+    background: red;
+    border-radius:20px;
+    width: 20px;
+    height: 20px;
+    margin-right:5px;
+    padding-left:5px;
+    padding-top: 4px;
+}
+.nav_bar .fa-facebook{background-color:#3B5898 ;}
+.nav_bar .fa-twitter{background-color:#55ACEE;}
+.nav_bar .fa-star{background-color:#0080B2;}
+.active_jobs .nav>li>a{
+    word-break: break-all;
+    padding-right: 0px;
+    max-height: 31px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.no-border{border: none;}

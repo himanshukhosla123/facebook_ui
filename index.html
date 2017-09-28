@@ -28,6 +28,7 @@
            </ul>       
        </div>
     </header>
+    
     <div class="container main">
       <div class="nav_bar">
        <div id="logged_user" class="row no-mrg bg-white">
@@ -39,23 +40,55 @@
             <h6>ashfaq@fellowapp.co</h6>
         </div>
       </div>
+      <h5>Sourcing Tool</h5>
+      <div class="row">
+          <ul class="nav">
+              <li ><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+              <li><a href="#"><i class="fa fa-star"></i> Boolean</a></li>
+          </ul>
+          
       </div>
+      <h5 class="bg-white">Create New Job <i class="fa pull-right fa-plus btn-info"></i></h5>
+      <h5>Active Jobs</h5>
+      <div class="row active_jobs">
+          <ul class="nav">
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Software Developer <span class="">- Flipkart</span></a></li>
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Java Developer <span class="">- Flipkart</span></a></li>
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Web Developer <span class="">- Swiggy</span></a></li>
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Ui developer <span class="">- hk</span></a></li>
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Ui developer <span class="">- hk</span></a></li>
+          </ul>
+      </div>
+      
+      </div>
+      
       <div class="posts_section">
         <div class="post_container col-sm-7 col-xs-12">
 
             
                 <div class="post create_post">
+                       <div class="post-header-container">
                         <div class="post-header">
-                            Ashfaq Ahmed
-                            <span class="pull-right dropdown options"><i class="fa fa-ellipsis-v"></i></span>
+                            <span><i class="fa fa-pencil"></i> Make Post</span> 
+                            <span><i class="fa fa-camera"></i> Photo </span>
+                            <span class="pull-right dropdown options"><i class="fa fa-times"></i></span>
                         </div>
-                        <div class="post-body">
-                        <textarea name="" id="" class="form-control" rows="10">
-                            
-                        </textarea>
+                        </div>    
+                        <div class="post-body row no-mrg">
+                        <div class="user_thumb pull-left">
+                            <img src="assets/images/user1.png"  class="img-responsive img-cicle" style="box-shadow:none;border:none;" alt="">
                         </div>
-                        <div class="post-footer row">
-                        
+                        <textarea name="" id="" class="pull-left" rows="" placeholder="Share an article, photo, link or job"></textarea>
+                        </div>
+                        <div class="post-footer row border-top">
+                        <select name="" id="" class="btn">
+                            <option value=""><i class="fa fa-star"></i> Specific friends</option>
+                            <option value="">bb</option>
+                            <option value="">cc</option>
+                            <option value="">dd</option>
+                        </select>
+                        <a href="" class="btn btn-primary pull-right">Post</a>
                         </div>
                     </div>
 
@@ -117,13 +150,13 @@
                 </div>
                 <div class="post-body">
                     <p>This is Ashfaq Ahmed post</p>
-                    <img src="http://quotesnhumor.com/wp-content/uploads/2015/11/Top-40-Minion-Jokes-funny-memes.jpg" class="img-responsive" alt="">
+<!--                    <img src="http://quotesnhumor.com/wp-content/uploads/2015/11/Top-40-Minion-Jokes-funny-memes.jpg" class="img-responsive" alt="">-->
                 </div>
                 <div class="post-footer">
                       <div class="current_post_options">
-                       <i class="fa fa-thumbs-up"></i>  20 |
-                        <i class="fa fa-thumbs-down"></i>  50 |
-                        <i class="fa fa-comments-o"></i>  550 
+                       <span><i class="fa fa-thumbs-up"></i>  20 </span>
+                        <span><i class="fa fa-thumbs-down"></i>  50 </span>
+                        <span><i class="fa fa-comments-o"></i>  550 </span>
                       </div>
                       <div class="padd_8 border-top">
                        <span class="post_options"><i class="fa fa-thumbs-o-up"></i> Like </span>
@@ -143,6 +176,30 @@
                       <div><a href="">Like</a> <a href="">Reply</a> 
                       <span class="posted_time">4 hrs</span>
                       </div>
+                      
+                    <div class="child_comment_container">
+                        <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing child.
+                      <div><a href="">Like</a> <a href="">Reply</a> 
+                      <span class="posted_time">4 hrs</span>
+                      </div>
+                       </div>
+                        </div>
+                        
+                        <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing child 2.
+                      <div><a href="">Like</a> <a href="">Reply</a> 
+                      <span class="posted_time">5 hrs</span>
+                      </div>
+                       </div>
+                        </div>
+                        
+                  <div class="comment row">
+                      <a href=""><i class="fa fa-arrow-left"></i> View More Comments</a>
+                  </div>
+                    </div>
                       </div>
                     <span class="pull-right dropdown options">
                      <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" id="dropdown1" type="button" aria-haspopup="true" aria-expanded="true"> 
@@ -152,22 +209,294 @@
                             <li><a href="#">Another action</a></li>
                           </ul>
                     </span>
-<!--
+                  </div>
+                  <div class="comment row">
+                      <a href=""><i class="fa fa-arrow-left"></i> View More Comments</a>
+                  </div>
+              </div>
+          </div>
+          </div>
+           
+            <div class="post">
+                <div class="post-header row">
+                    <div class="user_thumb">
+                        <img src="assets/images/user1.png" class="img-responsive img-circle" alt="User 1">
+                    </div>
+                    <div class="user_action pull-left">
+                        <a href="#">Ashfaq Ahmed</a>
+                    <span class="posted_time"><i class="fa fa-star"></i> 10 hrs</span>
+                    </div>
+                    <span class="pull-right dropdown options">
+                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" id="dropdown1" type="button" aria-haspopup="true" aria-expanded="true"> 
+                     <i class="fa fa-ellipsis-v"></i></a>
+                          <ul class="dropdown-menu" >
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                          </ul>
+                    </span>
+                </div>
+                <div class="post-body">
+                    <p>This is Ashfaq Ahmed post</p>
+                    <img src="http://quotesnhumor.com/wp-content/uploads/2015/11/Top-40-Minion-Jokes-funny-memes.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="post-footer">
+                      <div class="current_post_options">
+                       <span><i class="fa fa-thumbs-up"></i>  20 </span>
+                        <span><i class="fa fa-thumbs-down"></i>  50 </span>
+                        <span><i class="fa fa-comments-o"></i>  550 </span>
+                      </div>
+                      <div class="padd_8 border-top">
+                       <span class="post_options"><i class="fa fa-thumbs-o-up"></i> Like </span>
+                    <span class="post_options"><i class="fa fa-thumbs-o-down"></i> Dislike</span>
+                <span><i class="fa fa-comments-o"></i> Comments</span>
+                </div>
+          </div>
+          <div class="comment_box">
+              <div class="comment_container">
+                 <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class=" pull-left comment_box"><input type="text" class="" placeholder="Comment Below"></div>
+                 </div>
+                  <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing .
+                      <div><a href="">Like</a> <a href="">Reply</a> 
+                      <span class="posted_time">4 hrs</span>
+                      </div>
+                      
                     <div class="child_comment_container">
                         <div class="comment row">
                       <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
-                      <div class="comment_text pull-left">Hi , demo comment for testing child.</div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing child.
+                      <div><a href="">Like</a> <a href="">Reply</a> 
+                      <span class="posted_time">4 hrs</span>
+                      </div>
+                       </div>
                         </div>
+                        
+                        <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing child 2.
+                      <div><a href="">Like</a> <a href="">Reply</a> 
+                      <span class="posted_time">5 hrs</span>
+                      </div>
+                       </div>
+                        </div>
+                        
+                  <div class="comment row">
+                      <a href=""><i class="fa fa-arrow-left"></i> View More Comments</a>
+                  </div>
                     </div>
--->
+                      </div>
+                    <span class="pull-right dropdown options">
+                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" id="dropdown1" type="button" aria-haspopup="true" aria-expanded="true"> 
+                     <i class="fa fa-ellipsis-v"></i></a>
+                          <ul class="dropdown-menu" >
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                          </ul>
+                    </span>
+                  </div>
+                  <div class="comment row">
+                      <a href=""><i class="fa fa-arrow-left"></i> View More Comments</a>
                   </div>
               </div>
           </div>
           </div>
            
            
+            <div class="post">
+                <div class="post-header row">
+                    <div class="user_thumb">
+                        <img src="assets/images/user1.png" class="img-responsive img-circle" alt="User 1">
+                    </div>
+                    <div class="user_action pull-left">
+                        <a href="#">Ashfaq Ahmed</a>
+                    <span class="posted_time"><i class="fa fa-star"></i> 10 hrs</span>
+                    </div>
+                    <span class="pull-right dropdown options">
+                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" id="dropdown1" type="button" aria-haspopup="true" aria-expanded="true"> 
+                     <i class="fa fa-ellipsis-v"></i></a>
+                          <ul class="dropdown-menu" >
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                          </ul>
+                    </span>
+                </div>
+                <div class="post-body">
+                    <p>This is Ashfaq Ahmed post</p>
+                    <img src="http://quotesnhumor.com/wp-content/uploads/2015/11/Top-40-Minion-Jokes-funny-memes.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="post-footer">
+                      <div class="current_post_options">
+                       <span><i class="fa fa-thumbs-up"></i>  20 </span>
+                        <span><i class="fa fa-thumbs-down"></i>  50 </span>
+                        <span><i class="fa fa-comments-o"></i>  550 </span>
+                      </div>
+                      <div class="padd_8 border-top">
+                       <span class="post_options"><i class="fa fa-thumbs-o-up"></i> Like </span>
+                    <span class="post_options"><i class="fa fa-thumbs-o-down"></i> Dislike</span>
+                <span><i class="fa fa-comments-o"></i> Comments</span>
+                </div>
+          </div>
+          <div class="comment_box">
+              <div class="comment_container">
+                 <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class=" pull-left comment_box"><input type="text" class="" placeholder="Comment Below"></div>
+                 </div>
+                  <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing .
+                      <div><a href="">Like</a> <a href="">Reply</a> 
+                      <span class="posted_time">4 hrs</span>
+                      </div>
+                      
+                    <div class="child_comment_container">
+                        <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing child.
+                      <div><a href="">Like</a> <a href="">Reply</a> 
+                      <span class="posted_time">4 hrs</span>
+                      </div>
+                       </div>
+                        </div>
+                        
+                        <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing child 2.
+                      <div><a href="">Like</a> <a href="">Reply</a> 
+                      <span class="posted_time">5 hrs</span>
+                      </div>
+                       </div>
+                        </div>
+                        
+                  <div class="comment row">
+                      <a href=""><i class="fa fa-arrow-left"></i> View More Comments</a>
+                  </div>
+                    </div>
+                      </div>
+                    <span class="pull-right dropdown options">
+                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" id="dropdown1" type="button" aria-haspopup="true" aria-expanded="true"> 
+                     <i class="fa fa-ellipsis-v"></i></a>
+                          <ul class="dropdown-menu" >
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                          </ul>
+                    </span>
+                  </div>
+                  <div class="comment row">
+                      <a href=""><i class="fa fa-arrow-left"></i> View More Comments</a>
+                  </div>
+              </div>
+          </div>
+          </div>
+          
+          
+            <div class="post">
+                <div class="post-header row">
+                    <div class="user_thumb">
+                        <img src="assets/images/user1.png" class="img-responsive img-circle" alt="User 1">
+                    </div>
+                    <div class="user_action pull-left">
+                        <a href="#">Ashfaq Ahmed</a>
+                    <span class="posted_time"><i class="fa fa-star"></i> 10 hrs</span>
+                    </div>
+                    <span class="pull-right dropdown options">
+                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" id="dropdown1" type="button" aria-haspopup="true" aria-expanded="true"> 
+                     <i class="fa fa-ellipsis-v"></i></a>
+                          <ul class="dropdown-menu" >
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                          </ul>
+                    </span>
+                </div>
+                <div class="post-body">
+                    <p>This is Ashfaq Ahmed post</p>
+<!--                    <img src="http://quotesnhumor.com/wp-content/uploads/2015/11/Top-40-Minion-Jokes-funny-memes.jpg" class="img-responsive" alt="">-->
+                </div>
+                <div class="post-footer">
+                      <div class="current_post_options">
+                       <span><i class="fa fa-thumbs-up"></i>  20 </span>
+                        <span><i class="fa fa-thumbs-down"></i>  50 </span>
+                        <span><i class="fa fa-comments-o"></i>  550 </span>
+                      </div>
+                      <div class="padd_8 border-top">
+                       <span class="post_options"><i class="fa fa-thumbs-o-up"></i> Like </span>
+                    <span class="post_options"><i class="fa fa-thumbs-o-down"></i> Dislike</span>
+                <span><i class="fa fa-comments-o"></i> Comments</span>
+                </div>
+          </div>
+          <div class="comment_box">
+              <div class="comment_container">
+                 <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class=" pull-left comment_box"><input type="text" class="" placeholder="Comment Below"></div>
+                 </div>
+                  <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing .
+                      <div><a href="">Like</a> <a href="">Reply</a> 
+                      <span class="posted_time">4 hrs</span>
+                      </div>
+                      
+                    <div class="child_comment_container">
+                        <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing child.
+                      <div><a href="">Like</a> <a href="">Reply</a> 
+                      <span class="posted_time">4 hrs</span>
+                      </div>
+                       </div>
+                        </div>
+                        
+                        <div class="comment row">
+                      <div class="user_thumb pull-left"><img src="assets/images/user1.png" class="img-responsive img-circle" alt=""></div>
+                      <div class="comment_text pull-left">Hi , demo comment for testing child 2.
+                      <div><a href="">Like</a> <a href="">Reply</a> 
+                      <span class="posted_time">5 hrs</span>
+                      </div>
+                       </div>
+                        </div>
+                        
+                  <div class="comment row">
+                      <a href=""><i class="fa fa-arrow-left"></i> View More Comments</a>
+                  </div>
+                    </div>
+                      </div>
+                    <span class="pull-right dropdown options">
+                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" id="dropdown1" type="button" aria-haspopup="true" aria-expanded="true"> 
+                     <i class="fa fa-ellipsis-v"></i></a>
+                          <ul class="dropdown-menu" >
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                          </ul>
+                    </span>
+                  </div>
+                  <div class="comment row">
+                      <a href=""><i class="fa fa-arrow-left"></i> View More Comments</a>
+                  </div>
+              </div>
+          </div>
+          </div>
+           
            </div>
-            </div>
+      </div>
             
             
         <div class="tasks col-sm-4">
