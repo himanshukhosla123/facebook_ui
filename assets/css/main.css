@@ -86,6 +86,7 @@ border-radius:3px;
 
 .nav_bar .nav>li>a:hover{
     background-color: white !important;
+    background: #F6F7F9 !important;
 border: 1px solid #dddfe2;
 border-radius:3px;
     padding: 5px;
@@ -364,3 +365,104 @@ a{
     border-radius: 2px 0px 0px 2px;
     
 }
+
+
+.candidate{
+    width: calc(100% - 200px);
+    float: left;
+    padding:0px 10px; 
+}
+.candidate .btn{
+    margin: 0px 5px;
+    padding:6px 12px;
+}
+.job_info h3{
+    margin:15px 0px 15px;
+}
+.job_info h5{
+    margin:10px 5px 5px;
+    font-size: 15px;
+}
+.job_info h5 span{
+    padding:0px 10px;
+    border-right:1px solid #dddfe2;
+}
+.job_info .button-group{
+    padding-top: 20px;
+}
+
+.tabs{
+    margin:20px 0px 15px;
+}
+.filters{
+    margin: 15px 0px;
+}
+.tabs .nav>li>a{
+    border-radius: 0px;
+    font-size: 16px;
+    color: #1d2129;;
+    border-right:1px solid #dddfe2;
+    background-color: white;
+}
+.tabs .nav>li>a.active{
+background:#4267B2;
+    color: white;
+    font-weight:bold;
+}
+
+.tabs .badge{
+    background:#4267B2;
+/*    color: #1d2129;*/
+    color: white;
+}
+.tabs a.active .badge{
+    background:white;
+    color: black;
+} 
+.applicant{
+    padding:3px  5px 8px!important;
+    margin:8px 0px;
+    background: #FAFAFB;
+    background-color: #E9EBEE;
+}
+.applicant.active{
+    background: white;
+    box-shadow: 2px 2px 8px #ccc;
+}
+.applicant .user_img{
+    padding: 5px 0px;
+}
+.applicant_info{
+    width: calc(100% - 60px);
+}
+.applicant_info .user_name{
+    margin: 5px 0px 0px;
+    font-size:16px;
+    color:#365899;
+    font-weight: bold;
+}
+.applicant_info .comp_name{
+    margin:5px 0px;
+    font-size: 12px;
+}
+.applicant_info .designaton{
+    padding:0px 8px;
+    font-family:monospace;
+}
+.input-group-btn .fa
+{margin: 0px;}
+.main_profile .info h4{}
+.main_profile .info h5{
+margin: 5px 0px;    
+}
+.main_profile .info .btn{
+    padding:1px 10px !important;
+}
+.main_profile .label{font-size: 12px;margin: 5px 0px;}
+.main_profile .pull-right div{
+    margin:5px 0px;
+    text-align: right;
+}
+
+
+

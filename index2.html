@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrapcss/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+       <div class="container">
+           <ul class="pull-left">
+               <li><a href="">Cloudify</a></li>
+           </ul>
+           <div class="pull-left"><input type="text" placeholder="Search"><button id="search"><i class="fa fa-search" area-hidden="true"></i></button> </div>
+           <ul class="pull-right">
+               <li><a href="index.html"><i class="fa fa-home" area-hidden="true"></i> Home</a></li>
+               <li><a href=""><i class="fa fa-edit" area-hidden="true"></i></a></li>
+               <li><a href=""><i class="fa fa-plus" area-hidden="true"></i></a></li>
+               <li><a href=""><i class="fa fa-setting" area-hidden="true"></i></a></li>
+           </ul>       
+       </div>
+    </header>
+    
+    <div class="container main">
+      <div class="nav_bar">
+       <div id="logged_user" class="row no-mrg bg-white">
+        <div class="user_img pull-left">
+            <img src="assets/images/user1.png" class="img-responsive img-circle" alt="User 1">
+        </div>
+        <div class="user_info pull-left">
+            <h5>Ashfaq Ahmed</h5>
+            <h6>ashfaq@fellowapp.co</h6>
+        </div>
+      </div>
+      <h5>Sourcing Tool</h5>
+      <div class="row">
+          <ul class="nav">
+              <li ><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+              <li><a href="#"><i class="fa fa-star"></i> Boolean</a></li>
+          </ul>
+          
+      </div>
+      <h5 class="bg-white">Create New Job <i class="fa pull-right fa-plus btn-info"></i></h5>
+      <h5>Active Jobs</h5>
+      <div class="row active_jobs">
+          <ul class="nav">
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Software Developer <span class="">- Flipkart</span></a></li>
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Java Developer <span class="">- Flipkart</span></a></li>
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Web Developer <span class="">- Swiggy</span></a></li>
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Ui developer <span class="">- hk</span></a></li>
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Ui developer <span class="">- hk</span></a></li>
+          </ul>
+      </div>
+      
+      </div>
+      
+      <div class="candidate">
+          <div class="bg-white job_info row">
+             <div class="pull-left">
+              <h3><strong>Flipkart</strong> - Big Data Architect</h2>
+                 <h5><span>Banglore</span><span>4 - 8 years</span></h4>
+              </div>
+              <div class="pull-right button-group">
+                <button class="btn"><i class="fa fa-check-square-o"></i> Inactive</button>
+                <button class="btn btn-primary"><i class="fa fa-eye"></i> View Job</button>
+              </div>
+          </div>
+          <div class="candidate_list_container">
+              <div class="tabs row">
+                  <ul class="nav nav-pills nav-justified text-center">
+                      <li><a href="" class="active">Applied <span class="badge">4</span></a></li>
+                      <li><a href="">New<span class="badge">4</span></a></li>
+                      <li><a href="">Shortlisted</a></li>
+                      <li><a href="">Pending</a></li>
+                      <li><a href="">Interviewed<span class="badge">4</span></a></li>
+                      <li><a href="">Offered</a></li>
+                      <li><a href="">Joined</a></li>
+                  </ul>
+              </div>
+              <div class="row filters">
+                 <div class="pull-left">
+                 <button class="btn"><i class="fa fa-upload"></i> Similar Resume</button>
+                 </div>
+                  <div class="pull-right">
+                      <button class="btn"><i class="fa fa-plus"></i> Add Status</button>
+                      <button class="btn"><i class="fa fa-pencil"></i> Filter</button>
+                  </div>
+              </div>
+              <div class="current_container row">
+                  <div class="col-xs-12 col-sm-4 bg-white">
+                <h4 class="text-center">Candidates</h4>
+                    <div class="input-group">      
+                     <input type="text" class="form-control" placeholder="search candidate">
+                      <div class="input-group-btn">
+                          <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+                      </div>
+                  </div>
+                      <div class="list_box_container">
+                          <div class="applicant row active bg-white">
+                              <div class="user_img pull-left">
+                                  <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                              </div>
+                              <div class="applicant_info pull-left">
+                                  <h5 class="user_name">Demo Name</h5>
+                                  <h6 class="comp_name">Company Name</h6>
+                                  <h6 class="no-mrg designaton">Designation</h6>
+                              </div>
+                          </div>
+                          <div class="applicant row bg-white">
+                              <div class="user_img pull-left">
+                                  <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                              </div>
+                              <div class="applicant_info pull-left">
+                                  <h5 class="user_name">Demo Name</h5>
+                                  <h6 class="comp_name">Company Name</h6>
+                                  <h6 class="no-mrg designaton">Designation</h6>
+                              </div>
+                          </div>
+                          <div class="applicant row bg-white">
+                              <div class="user_img pull-left">
+                                  <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                              </div>
+                              <div class="applicant_info pull-left">
+                                  <h5 class="user_name">Demo Name</h5>
+                                  <h6 class="comp_name">Company Name</h6>
+                                  <h6 class="no-mrg designaton">Designation</h6>
+                              </div>
+                          </div>
+                          <div class="applicant row bg-white">
+                              <div class="user_img pull-left">
+                                  <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                              </div>
+                              <div class="applicant_info pull-left">
+                                  <h5 class="user_name">Demo Name</h5>
+                                  <h6 class="comp_name">Company Name</h6>
+                                  <h6 class="no-mrg designaton">Designation</h6>
+                              </div>
+                          </div>
+                          <div class="applicant row bg-white">
+                              <div class="user_img  pull-left">
+                                  <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                              </div>
+                              <div class="applicant_info pull-left">
+                                  <h5 class="user_name">Demo Name</h5>
+                                  <h6 class="comp_name">Company Name</h6>
+                                  <h6 class="no-mrg designaton">Designation</h6>
+                              </div>
+                          </div>
+                          <div class="applicant row bg-white">
+                              <div class="user_img  pull-left">
+                                  <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                              </div>
+                              <div class="applicant_info pull-left">
+                                  <h5 class="user_name">Demo Name</h5>
+                                  <h6 class="comp_name">Company Name</h6>
+                                  <h6 class="no-mrg designaton">Designation</h6>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-8 main_profile" style="padding: 0px 0px 0px 12px;">
+                      <div class="bg-white row info">
+                          <div class="pull-left">
+                              <h4>Ashok Kumar</h4>
+                              <h5>Flipkart</h5>
+                              <h5>IIt guwahati</h5>
+                          </div>
+                          <div class="pull-right">
+                              <div><span class="label label-info">Me</span></div>
+                              <div><span class="label label-primary">Awaiting Resume</span></div>
+                              <div><button class="btn">Send</button> <button class="btn btn-primary">Print</button></div>
+                          </div>
+                      </div>
+                      <div class="tabs row">
+                          <ul class="nav nav-pills nav-justified text-center">
+                          <li><a href="" class="active">Resume</a></li>
+                          <li><a href="">Feed</a></li>
+                         </ul>
+              </div>
+                 <div class="row bg-white">
+<!--                    <form class="form-horizontal">-->
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-10 input-group">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                      <div class="input-group-btn">
+                          <button class="btn btn-primary"><i class="fa fa-pencil"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10 input-group">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                      <div class="input-group-btn">
+                          <button class="btn btn-primary"><i class="fa fa-pencil"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10 input-group">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                      <div class="input-group-btn">
+                          <button class="btn btn-primary"><i class="fa fa-pencil"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                     <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Phone number</label>
+                    <div class="col-sm-10 input-group">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                      <div class="input-group-btn">
+                          <button class="btn btn-primary"><i class="fa fa-pencil"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                     <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Sex</label>
+                    <div class="col-sm-10 input-group">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                      <div class="input-group-btn">
+                          <button class="btn btn-primary"><i class="fa fa-pencil"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                     <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">age</label>
+                    <div class="col-sm-10 input-group">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                      <div class="input-group-btn">
+                          <button class="btn btn-primary"><i class="fa fa-pencil"></i></button>
+                      </div>
+                    </div>
+                  </div>
+<!--                </form>-->
+                     
+                 </div>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+    </div>
+    <footer>
+        
+    </footer>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--    <script src="assets/js/bootstrap.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js" defer></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/controller.js" defer></script>
+    <script src="assets/js/model.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js" async></script>
+</body>
+</html>   
