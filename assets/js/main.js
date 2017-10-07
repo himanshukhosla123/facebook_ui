@@ -27,6 +27,8 @@ $(".toggleHome").click(function(){
     $(".nav_bar").toggleClass("translatey100");
 })
 
+$(".to-dos").css("max-height",$(window).height()-140+"px")
+
 function manageWidth(){
     if($(window).width()<=992)
     {$(".nav_bar").addClass("translatey100");}
@@ -34,3 +36,8 @@ function manageWidth(){
         $(".nav_bar").removeClass("translatey100");
     }
 }
+
+$(".add_btn , .new_todo a").click(function(){
+    $(".new_todo").toggleClass("none");
+    //add to resize too
+  });

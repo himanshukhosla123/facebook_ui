@@ -14,7 +14,7 @@ header{
     left: 0px;
     width: 100%;
 }
-.toggleHome{
+.toggleHome{  
     display:none;
 }
 .user_img{
@@ -104,7 +104,7 @@ border-radius:3px;
 .nav_bar .fa{
     padding:3px 5px;
 }
-.fa{padding-right: 5px;}
+/*.fa{padding-right: 5px;}*/
 .nav_bar{
     width:200px;
     float: left;
@@ -124,6 +124,9 @@ border-radius:3px;
 }
 .user_info h6{
     margin-bottom:0px;
+}
+.post .fa,.candidate .fa{
+    padding-right: 5px;
 }
 .user_info{
     width: calc(100% -70px);
@@ -322,6 +325,110 @@ a{
     width:275px;
     padding:0px;
 }
+.tasks h3{
+    padding:10px 0px;
+    margin:5px -12px 10px;
+    background:#4267B2;
+    color:white;
+    border-radius:3px;
+}
+.to-dos{
+    margin-right: -13px;
+    overflow-y: auto;
+    position:relative;
+}
+.todoBox{
+    margin:0px 0px 15px;
+}
+.toDoList{
+    padding:10px 0px;
+    box-shadow:1px 1px 5px rgba(0,0,0,.2);
+/*    border-top: 1px solid rgba(0,0,0,.15);*/
+/*    border-bottom: 1px solid rgba(0,0,0,.15);*/
+}
+.todoBox h6{
+    margin: 5px 0px;
+    font-weight: bold;
+}
+.border-blue .todo{
+    border-left: 4px solid blue;
+}
+.border-red  .todo{
+    border-left: 4px solid red;
+}
+.border-yellow .todo{
+    border-left: 4px solid yellow;
+}
+.border-green .todo{
+    border-left: 4px solid green;
+}
+.todo{
+    padding:0px 5px 5px;
+}
+.todo p{
+    width:calc(100% - 75px);
+    padding-left: 5px;
+/*    manage width*/
+    margin: 0px;
+    display: inline-block;
+}
+.todo input{
+    margin: 0px;
+    vertical-align: top;
+}
+.todo .time{
+    color: #90949c;
+    display: inline-block;
+    padding-right: 5px;
+}
+.add_btn{
+    position: absolute;
+    background: blue;
+    color:white;
+    bottom:15px;
+    right:20px;
+    font-size: 16px;
+    border-radius:30px;
+    padding:10px 14px;
+    cursor:pointer;
+    z-index:100;
+}
+
+.new_todo{
+    padding:10px; 
+    height:100%;
+    position:absolute;
+    top:0px;
+    z-index: 50;
+    background:white;
+    width: 100%;
+    left:0px;
+    border:1px solid #ccc;
+}
+.new_todo h3{
+    margin:5px -11px 15px;
+}
+.none{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
