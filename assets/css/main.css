@@ -2,7 +2,7 @@ body{
     background-color: #e9ebee;
     color: #1d2129;
     font-size: 12px;
-    padding-top:50px; 
+    padding-top:43px; 
     font-family:Arial, Helvetica, sans-serif;
 }
 header{
@@ -21,9 +21,30 @@ header{
     width:50px;
     height:50px;
 }
-
+.task_bar{
+    display: none;
+}
 .translatey100{
     transform: translate(-100%);
+}
+
+.main_nav{
+/*  margin: 10px auto;*/
+    margin-bottom: 10px;
+}
+.main_nav .nav>li>a{
+    background:white;
+    color: #1d2129; 
+/*    background: #F6F6F6;*/
+    font-size: 14px;
+    font-weight:600;
+    margin-bottom: 0px;
+    border-right: 1px solid #ccc;
+    border-radius:0px;
+}
+.main_nav .nav>li>a.active{
+    background:#4267B2;
+  color: white;
 }
 .post textarea,.post textarea:focus{
     resize:none;
@@ -510,28 +531,35 @@ a{
 .filters{
     margin: 15px 0px;
 }
+.tabs .nav{
+    padding: 15px 0px;
+    background: white;
+}
 .tabs .nav>li>a{
     border-radius: 0px;
     font-size: 16px;
-    padding: 10px 0px;
-    color: #1d2129;;
-    border-right:1px solid #dddfe2;
+    padding:2px 0px;
+    color:#7F8689;
+    border-right:2px solid #dddfe2;
     background-color: white;
+    font-weight: bold;
+    margin-bottom: 0px;
 }
 .tabs .nav>li>a.active{
-background:#4267B2;
-    color: white;
-    font-weight:bold;
+    color:#4267B2;
+/*    color: white;*/
+    font-weight:700;
 }
 
 .tabs .badge{
-    background:#4267B2;
+    background:#2C4578;
 /*    color: #1d2129;*/
     color: white;
+    padding:2px 5px;
 }
 .tabs a.active .badge{
-    background:white;
-    color: black;
+/*    background:white;*/
+/*    color: black;*/
 } 
 .applicant{
     padding:3px  5px 8px!important;
@@ -577,24 +605,6 @@ margin: 5px 0px;
     margin:5px 0px;
     text-align: right;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .chat_box{
     border-radius: 5px;

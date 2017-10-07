@@ -17,7 +17,6 @@ $(document).ready(function(){
     manageWidth();
 });
 
-$("header .recent-chat-list").css("height",$(window).height()*0.67+"px");
 $(".allMessages").css("height",$(window).height()-40+"px");
 $(".allMessages .recent-chat-container,.allMessages .recent-chat-container").css("height",$(window).height()-90+"px");
 
@@ -27,7 +26,7 @@ $(".toggleHome").click(function(){
     $(".nav_bar").toggleClass("translatey100");
 })
 
-$(".to-dos").css("max-height",$(window).height()-140+"px")
+$(".to-dos").css("max-height",$(window).height()-140+"px");
 
 function manageWidth(){
     if($(window).width()<=992)
@@ -35,9 +34,16 @@ function manageWidth(){
     else{
         $(".nav_bar").removeClass("translatey100");
     }
+    if($(window).width()>640)
+$("header .recent-chat-list").css("height",$(window).height()*0.67+"px");
 }
 
 $(".add_btn , .new_todo a").click(function(){
     $(".new_todo").toggleClass("none");
     //add to resize too
   });
+
+$(".task_bar").click(function(){
+    $(".tasks").toggle();
+$(".to-dos").css("max-height",$(window).height()-160+"px");
+});
