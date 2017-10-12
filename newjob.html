@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrapcss/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/media_queries.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+       <div class="container">
+           <ul class="pull-left">
+               <li><a href="">Cloudify</a></li>
+           </ul>
+           <div class="search_input pull-left"><input type="text" placeholder="Search"><button id="search"><i class="fa fa-search" area-hidden="true"></i></button> </div>
+           <ul class="pull-right">
+               <li><a href="jaavscript:void(0);" class="task_bar"><i class="fa fa-edit" area-hidden="true"></i></a></li>
+               <li><a href=""><i class="fa fa-search" area-hidden="true"></i></a></li>
+               <li type="button" class="dropdown"><a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-comments-o" area-hidden="true"></i></a>
+               <div class="recent-chat-list dropdown-menu" aria-labelledby="dLabel">
+                   <div class="header">
+                      <strong>Recent (12)</strong>
+                      <span class="grey_col">Message Requests</span>
+                       <div class="pull-right">
+                       <a href="#"> New group </a> 
+                       <a href="#"> New message </a>
+                       </div>
+                   </div>
+                   
+                   <div class="row no-mrg recent-chat-container">
+                   <div class="col-xs-12 no-padd">
+                       <div class="recent-chat-box row no-mrg new">
+                           <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                           <div class="recent-chat-message">
+                               <h6>Demo Khosla (1)</h6>
+                               <p><i class="fa fa-check"></i>Hi</p>
+                           </div>
+                           <div class="recent-chat-time">
+                               <span class="time">10:10</span>
+                               <span class="readAll"><i class="fa fa-cog"></i></span>
+                           </div>
+                       </div>
+                       <div class="recent-chat-box row no-mrg">
+                           <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                           <div class="recent-chat-message">
+                               <h6>Demo Khosla (1)</h6>
+                               <p><i class="fa fa-check"></i>Hi</p>
+                           </div>
+                           
+                           <div class="recent-chat-time">
+                               <span class="time">10:10</span>
+                               <span class="readAll"><i class="fa fa-cog"></i></span>
+                           </div>
+                       </div>
+                       
+                       <div class="recent-chat-box row no-mrg">
+                           <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                           <div class="recent-chat-message">
+                               <h6>Demo Khosla (1)</h6>
+                               <p><i class="fa fa-check"></i>Hi</p>
+                           </div>
+                           
+                           <div class="recent-chat-time">
+                               <span class="time">10:10</span>
+                               <span class="readAll"><i class="fa fa-cog"></i></span>
+                           </div>
+                       </div>
+                       <div class="recent-chat-box row no-mrg">
+                           <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                           <div class="recent-chat-message">
+                               <h6>Demo Khosla (1)</h6>
+                               <p><i class="fa fa-check"></i>Hi</p>
+                           </div>
+                           <div class="recent-chat-time">
+                               <span class="time">10:10</span>
+                               <span class="readAll"><i class="fa fa-cog"></i></span>
+                           </div>
+                       </div>
+                       <div class="recent-chat-box row no-mrg">
+                           <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                           <div class="recent-chat-message">
+                               <h6>Demo Khosla (1)</h6>
+                               <p><i class="fa fa-check"></i>Hi</p>
+                           </div>
+                           <div class="recent-chat-time">
+                               <span class="time">10:10</span>
+                               <span class="readAll"><i class="fa fa-cog"></i></span>
+                           </div>
+                       </div>
+                       <div class="recent-chat-box row no-mrg">
+                           <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                           <div class="recent-chat-message">
+                               <h6>Demo Khosla (1)</h6>
+                               <p><i class="fa fa-check"></i>Hi</p>
+                           </div>
+                           <div class="recent-chat-time">
+                               <span class="time">10:10</span>
+                               <span class="readAll"><i class="fa fa-cog"></i></span>
+                           </div>
+                       </div>
+                       <div class="recent-chat-box row no-mrg">
+                           <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                           <div class="recent-chat-message">
+                               <h6>Demo Khosla (1)</h6>
+                               <p><i class="fa fa-check"></i>Hi</p>
+                           </div>
+                           <div class="recent-chat-time">
+                               <span class="time">10:10</span>
+                               <span class="readAll"><i class="fa fa-cog"></i></span>
+                           </div>
+                       </div>
+                       <div class="recent-chat-box row no-mrg">
+                           <img src="assets/images/user1.png" class="img-responsive img-circle" alt="">
+                           <div class="recent-chat-message">
+                               <h6>Demo Khosla (1)</h6>
+                               <p><i class="fa fa-check"></i>Hi</p>
+                           </div>
+                           <div class="recent-chat-time">
+                               <span class="time">10:10</span>
+                               <span class="readAll"><i class="fa fa-cog"></i></span>
+                           </div>
+                       </div>
+                   </div>
+                    </div>
+                   <div class="header">
+                       <a href="allMessage.html">See all in messenger</a>
+                       <a href="" class="pull-right">Mark all as read</a>
+                   </div>
+               </div>
+               </li>
+               <li><a href=""><i class="fa fa-cog" area-hidden="true"></i></a></li>
+               <li><a class="toggleHome" href="javascript:void(0);"><i class="fa fa-home" area-hidden="true"></i></a></li>
+           </ul>       
+       </div>
+     
+     </header>
+    
+    <div class="container main" style="margin-top:10px;">
+      <div class="nav_bar">
+       <div id="logged_user" class="row no-mrg bg-white">
+        <div class="user_img pull-left">
+            <img src="assets/images/user1.png" class="img-responsive img-circle" alt="User 1">
+        </div>
+        <div class="user_info pull-left">
+            <h5>Ashfaq Ahmed</h5>
+            <h6>ashfaq@fellowapp.co</h6>
+        </div>
+      </div>
+      <h5>Sourcing Tool</h5>
+      <div class="row">
+          <ul class="nav">
+              <li ><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+              <li><a href="#"><i class="fa fa-star"></i> Boolean</a></li>
+          </ul>
+          
+      </div>
+      <h5 class="bg-white">Create New Job <i class="fa pull-right fa-plus btn-info"></i></h5>
+      <h5>Active Jobs</h5>
+      <div class="row active_jobs">
+          <ul class="nav">
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Software Developer <span class="">- Flipkart</span></a></li>
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Java Developer <span class="">- Flipkart</span></a></li>
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Web Developer <span class="">- Swiggy</span></a></li>
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Ui developer <span class="">- hk</span></a></li>
+              <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> Ui developer <span class="">- hk</span></a></li>
+          </ul>
+      </div>
+      
+      </div>
+      <div class="new_job_section">
+          <div class="col-xs-12 new_job">
+              <h3  class="bg-white header">New Job</h3>
+              <div class="bg-white row">
+                 <div class="row">
+                  <div class="col-xs-12 col-sm-6" style="border-right:1px solid #ccc;">
+                     <table class="table">
+                         <tr>
+                             <td><label for="">Existing Client</label></td>
+                             <td><select name="" id="" class="form-control">
+                                 <option value="flipkart" selected>Flipkart</option>
+                                 <option value="">Amazon</option>
+                                 <option value="ebay">E-Bay</option>
+                             </select>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td><label for="">Desination</label></td>
+                             <td><input type="text" class="form-control" list="browsers">
+                                <datalist id="browsers">
+                                  <option value="Internet Explorer">
+                                  <option value="Firefox">
+                                  <option value="Google Chrome">
+                                  <option value="Opera">
+                                  <option value="Safari">
+                                </datalist>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td><label for="">Mandatory Skills</label></td>
+                             <td><input type="text" placeholder="enter skills" class="form-control"></td>
+                         </tr>
+                         <tr>
+                             <td><label for="">Expericence</label></td>
+                             <td><input type="number" class="form-control exp"> To <input type="number" class="form-control exp"></td>
+                         </tr>
+                         <tr>
+                             <td colspan="2"><button class="btn btn-primary form-control btn-lg text-center">Create Questionaries</button></td>
+                         </tr>
+                         <tr>
+                             <td><label for="">Job Location</label></td>
+                             <td><input type="text" placeholder="enter job location" class="form-control"></td>
+                         </tr>
+                        <tr>
+                             <td><label for="">Allot to</label></td>
+                             <td><input type="text" placeholder="Enter names" class="form-control"></td>
+                         </tr>
+                     </table>
+                     
+                     
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                      <table class="table">
+                         <tr>
+                             <td><label for="">New Client</label></td>
+                             <td><button class="btn btn-primary btn-lg form-control text-center" data-toggle="modal" data-target="#create_job">Create New Client</button></td>
+                         </tr>
+                         <tr>
+                             <td><label for="">Primary Skills</label></td>
+                             <td><input type="text" class="form-control" list="browsers">
+                                <datalist id="browsers">
+                                  <option value="Internet Explorer">
+                                  <option value="Firefox">
+                                  <option value="Google Chrome">
+                                  <option value="Opera">
+                                  <option value="Safari">
+                                </datalist>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td><label for="">Either OR Skills</label></td>
+                             <td><input type="text" placeholder="enter skills" class="form-control"></td>
+                         </tr>
+                         <tr>
+                             <td><label for="">CTC (Lakhs)</label></td>
+                             <td><input type="number" class="form-control exp"> To <input type="number" class="form-control exp"></td>
+                         </tr>
+                         <tr>
+                            <td></td>
+                             <td><button class="btn btn-primary btn-lg form-control text-center">Attach ID</button></td>
+                         </tr>
+                         <tr>
+                             <td>Is it a drive?</td>
+                             <td>
+                                 <input type="radio" id="yesdrive" name="drive"><label for="yesdrive">Yes</label>
+                                 <input type="radio" id="nodrive" name="drive"><label for="nodrive">No</label>
+                             </td>
+                         </tr>
+<!--                         show this is user selects yes in a drive-->
+                         <tr>
+                             <td>Enter date</td>
+                             <td><input type="date" class="form-control"></td>
+                         </tr>
+                     </table>
+                  </div>
+                  </div>
+                  <div class="row text-center create_job">
+                      <button class="btn btn-primary btn-lg  form-control">Create</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+   
+   <div class="modal fade" id="create_job" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+         <button class="btn btn-primary btn-lg form-control">Create New Client</button>
+     </div>
+      <div class="modal-body">
+      <table class="table">
+          <tr>
+              <td><input type="text" class="form-control" placeholder="Enter Client Name"></td>
+          </tr>
+          <tr>
+              <td><input type="text" class="form-control" placeholder="Linked Url"></td>
+          </tr>
+          <tr>
+              <td><input type="text" class="form-control" placeholder="Facebook Url"></td>
+          </tr>
+          <tr>
+              <td><input type="text" class="form-control" placeholder="Twitter url"></td>
+          </tr>
+          <tr>
+              <td><input type="text" class="form-control" placeholder="Company url"></td>
+          </tr>
+          <tr>
+              <td><input type="text" class="form-control" placeholder="Stage of the company"></td>
+          </tr>
+          <tr>
+              <td><input type="number" class="form-control" placeholder="Total funding value url"></td>
+          </tr>
+      </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-lg">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js" defer></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/controller.js" defer></script>
+    <script src="assets/js/model.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js" async></script>
+</body>
+</html>   

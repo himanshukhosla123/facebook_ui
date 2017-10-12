@@ -130,7 +130,7 @@ border-radius:3px;
     width:200px;
     float: left;
 }
-.posts_section{
+.posts_section,.new_job_section{
     float: left;
     width:calc(100% - 200px);
 }
@@ -881,4 +881,55 @@ header .dropdown-menu{
 
 .chat-list .recent-chat-box.active{
     background-color: #F6F6F7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.new_job .header{
+    margin-top: 0px;
+    padding: 20px 10px;
+}
+
+.new_job .table>tbody>tr>td,#create_job .table>tbody>tr>td{
+    vertical-align:middle;
+    border-top: 0px;
+    font-size: 14px;
+}
+.new_job .table>tbody>tr>td{
+ margin-bottom:0px;
+}
+.new_job .exp{
+    width:inherit;
+    display: inline-block;
+    width:50px;
+}
+.new_job .create_job{
+    margin: 15px 0px;
+}
+.new_job .create_job button{
+    width: auto;
+    min-width: 150px;
 }
