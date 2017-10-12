@@ -933,3 +933,6 @@ header .dropdown-menu{
     width: auto;
     min-width: 150px;
 }
+#create_job .table{
+    margin-bottom: 0px;
+}
