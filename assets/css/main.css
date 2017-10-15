@@ -32,7 +32,7 @@ header{
 /*  margin: 10px auto;*/
     margin-bottom: 10px;
 }
-.main_nav .nav>li>a{
+.main_nav .nav>li>a,.blue .nav>li>a{
     background:white;
     color: #1d2129; 
 /*    background: #F6F6F6;*/
@@ -42,7 +42,7 @@ header{
     border-right: 1px solid #ccc;
     border-radius:0px;
 }
-.main_nav .nav>li>a.active{
+.main_nav .nav>li>a.active,.blue .nav>li.active>a{
     background:#4267B2;
   color: white;
 }
@@ -189,14 +189,14 @@ border-radius:3px;
 .create_post .post-footer{
     padding: 5px 0px;
 }
-.btn{
+.btn-default{
     padding:2px 15px;
     border-radius:1px;
     background-color:#f6f7f9;
     border:1px solid #ced0d4;
     color: #4b4f56;
 }
-.btn:hover{
+.btn-default:hover{
     background: #E9EBEE;
 }
 .btn-primary{
@@ -551,13 +551,13 @@ a{
     font-weight:700;
 }
 
-.tabs .badge{
+.tabs .badge,.blue badge{
     background:#2C4578;
 /*    color: #1d2129;*/
     color: white;
     padding:2px 5px;
 }
-.tabs a.active .badge{
+.tabs a.active .badge,.blue a.active .badge{
 /*    background:white;*/
 /*    color: black;*/
 } 
@@ -935,4 +935,61 @@ header .dropdown-menu{
 }
 #create_job .table{
     margin-bottom: 0px;
+}
+
+#questionaries .nav>li>a{
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.full-width{
+    width: 100%;
+}
+.question_info{
+    width: calc(100% - 90px);
+    float: left;
+}
+.blue-col{
+    color:blue;
+}
+.add_other:hover{
+    text-decoration:underline;
+}
+
+.info_form{
+    width: calc(100% - 100px);
+}
+.question_box{
+    float: left;
+    width: calc(100% - 85px);
+}
+.info_form div,question_info div{
+    margin-bottom: 5px;
+}
+.info_form textarea{resize: none;}
+input[type=radio],input[type=checkbox]{
+    margin-top: 0px;
+    width:16px;
+    transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+}
+#questionaries label{
+    margin: 0px;
+}
+
+.form-user:focus{
+    outline: none;
+    box-shadow:none;
+    border:1px solid #ccc;
+    border-bottom: 2px solid blue;
+}
+.custom_info>li{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.custom_info .form-control{
+    border:none;
+    outline: none;
+    box-shadow: none;
 }

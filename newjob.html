@@ -207,6 +207,7 @@
                              </td>
                          </tr>
                          <tr>
+                            
                              <td><label for="">Mandatory Skills</label></td>
                              <td><input type="text" placeholder="enter skills" class="form-control"></td>
                          </tr>
@@ -215,7 +216,7 @@
                              <td><input type="number" class="form-control exp"> To <input type="number" class="form-control exp"></td>
                          </tr>
                          <tr>
-                             <td colspan="2"><button class="btn btn-primary form-control btn-lg text-center">Create Questionaries</button></td>
+                             <td colspan="2"><button class="btn btn-primary full-width btn-lg text-center" data-toggle="modal" data-target="#questionaries">Create Questionaries</button></td>
                          </tr>
                          <tr>
                              <td><label for="">Job Location</label></td>
@@ -233,7 +234,7 @@
                       <table class="table">
                          <tr>
                              <td><label for="">New Client</label></td>
-                             <td><button class="btn btn-primary btn-lg form-control text-center" data-toggle="modal" data-target="#create_job">Create New Client</button></td>
+                             <td><button class="btn btn-primary full-width btn-lg text-center" data-toggle="modal" data-target="#create_job">Create New Client</button></td>
                          </tr>
                          <tr>
                              <td><label for="">Primary Skills</label></td>
@@ -257,7 +258,7 @@
                          </tr>
                          <tr>
                             <td></td>
-                             <td><button class="btn btn-primary btn-lg form-control text-center">Attach ID</button></td>
+                             <td><button class="btn btn-primary full-width text-center">Attach ID</button></td>
                          </tr>
                          <tr>
                              <td>Is it a drive?</td>
@@ -275,7 +276,7 @@
                   </div>
                   </div>
                   <div class="row text-center create_job">
-                      <button class="btn btn-primary btn-lg  form-control">Create</button>
+                      <button class="btn btn-primary">Create</button>
                   </div>
               </div>
           </div>
@@ -286,7 +287,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
      <div class="modal-header">
-         <button class="btn btn-primary btn-lg form-control">Create New Client</button>
+         <button class="btn btn-primary btn-lg full-width">Create New Client</button>
      </div>
       <div class="modal-body">
       <table class="table">
@@ -314,8 +315,190 @@
       </table>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary btn-lg">Create</button>
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+   
+   
+   
+   
+   <div class="modal fade" id="questionaries" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-body blue" style="padding:10px;">
+  <ul class="nav text-center" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Most Common Questions</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Create your own</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Added Questions<span class="badge">3</span></a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+      <table class="table">
+          <tr>
+             <td class="row">
+                <div class="col-xs-10">
+                    <h4>Name</h4>
+                    <div class="info_form">
+                       <div>
+                        <input type="radio" id="op1" name="option">
+                       <label for="op1">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="op2" name="option">
+                       <label for="op2">No</label>
+                    </div>
+                    </div>
+                </div> 
+                 <div class="status_button pull-right text-right">
+                     <button class="btn btn-danger"><i class="fa fa-plus"></i> Add</button>
+<!--                     <button class="btn btn-success"><i class="fa fa-star"></i> Added</button>-->
+                 </div>
+             </td>
+          </tr>
+          <tr>
+             <td class="row">
+                <div class="col-xs-10">
+                    <h4>Name</h4>
+                    <div class="info_form">
+                       <div>
+                        <input type="checkbox" id="o" name="option">
+                       <label for="op1">Yes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="" name="option">
+                       <label for="op2">No</label>
+                    </div>
+                    </div>
+                </div> 
+                 <div class="status_button pull-right text-right">
+<!--                     <button class="btn btn-danger"><i class="fa fa-plus"></i> Add</button>-->
+                     <button class="btn btn-success"><i class="fa fa-star"></i> Added</button>
+                 </div>
+             </td>
+          </tr>
+          
+          <tr>
+             <td class="row">
+                <div class="col-xs-10">
+                    <h4>Paragraph</h4>
+                    <div class="info_form text-center">
+                       <textarea name="" id="" class="form-control" rows="5"></textarea>
+                    </div>
+                </div> 
+                 <div class="status_button pull-right text-right">
+                     <button class="btn btn-danger"><i class="fa fa-plus"></i> Add</button>
+<!--                     <button class="btn btn-success"><i class="fa fa-star"></i> Added</button>-->
+                 </div>
+             </td>
+          </tr>
+          
+        </table>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+         <table class="table">
+             <tr>   
+              <td class="row"> 
+              <div class="col-xs-8">
+              <h4>
+              <input type="text" class="form-control" value="Name">
+                </h4>
+                 <ul class="nav custom_info">
+                  <li><input type="text" class="form-control form-user"></li>
+                  <li><input type="text" class="form-control form-user" value="option 1" disabled></li>
+                  <li>Add <span class="add_other">another option</span> OR <span class="add_other blue-col">' Add OTHER '</span></li>
+                </ul>
+              </div> 
+              <div class="col-xs-4 text-center">
+                  <select name="" id="" class="form-control">
+                      <option value="">Multiple Choice</option>
+                      <option value="">Single Choice</option>
+                      <option value="">Short Paragraph</option>
+                      <option value="">Big paragraph</option>
+                  </select>
+              </div>
+              
+              </td>
+          </tr>
+         </table>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="messages">
+    
+            
+      <table class="table">
+          <tr>
+             <td class="row">
+                <div class="question_box">
+                    <h4>Name</h4>
+                    <div class="question_info">
+                       <div>
+                        <input type="radio" id="op1" name="option">
+                       <label for="op1">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="op2" name="option">
+                       <label for="op2">No</label>
+                    </div>
+                    </div>
+                </div> 
+                 <div class="pull-right">
+                    <button class="btn btn-info"><i class="fa fa-pencil"></i></button>
+                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                 </div>
+             </td>
+          </tr>
+          <tr>
+             <td class="row">
+                <div class="question_box">
+                    <h4>Name</h4>
+                    <div class="question_info">
+                       <div>
+                        <input type="checkbox" id="o" name="option">
+                       <label for="op1">Yes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="" name="option">
+                       <label for="op2">No</label>
+                    </div>
+                    </div>
+                </div> 
+                 <div class="pull-right">
+                    <button class="btn btn-info"><i class="fa fa-pencil"></i></button>
+                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                 </div>
+             </td>
+          </tr>
+          
+          <tr>
+             <td class="row">
+                <div class="question_box">
+                    <h4>Paragraph</h4>
+                    <div class="question_info">
+                       <textarea name="" id="" class="form-control" rows="5"></textarea>
+                    </div>
+                </div> 
+                 <div class="pull-right">
+                    <button class="btn btn-info"><i class="fa fa-pencil"></i></button>
+                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                 </div>
+             </td>
+          </tr>
+          
+        </table> 
+                    
+    </div>
+  </div>
+     
+     
+    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Create</button>
       </div>
     </div>
   </div>
