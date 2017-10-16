@@ -993,3 +993,42 @@ input[type=radio],input[type=checkbox]{
     outline: none;
     box-shadow: none;
 }
+
+.resume_section{
+    padding:10px;
+    border-bottom: 1ps solid #ccc;
+}
+.resume_info{
+ padding:10px 0px 10px 10px;   
+}
+.resume_section .fa{
+    font-size:18px;
+    color:blue;
+    cursor: pointer;
+}
+.resume_info .logo{
+    height: 50px;
+    width:50px;
+    margin-right: 10px;
+}
+.resume_info .info{
+    width:calc(100% - 85px);
+}
+.resume_info .job_title{
+    font-weight: bold;
+    margin-top: 0px;
+}
+.resume_info .job_title{
+   font-weight:600; 
+}
+.resume_info .job_desc{
+  color:rgba(0,0,0,.7);
+  font-size:12px;
+}
+.resume_info.border-bottom,.border-bottom{
+    border-bottom: 1px solid #ccc;
+}
+.resume_section h3{
+    margin: 10px 0px 20px;
+    font-size: 20px;
+}
