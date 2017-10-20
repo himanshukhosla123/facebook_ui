@@ -80,6 +80,12 @@
     header .search_input.pull-left{
         display: none;
     }
+    .applicant,.applicant.active{
+        background: white;
+        box-shadow: none;
+        cursor: pointer;
+    }
+        
 }
 
 @media(max-width:640px){
