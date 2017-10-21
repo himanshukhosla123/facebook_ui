@@ -1002,7 +1002,7 @@ input[type=radio],input[type=checkbox]{
 .resume_info{
  padding:10px 0px 10px 5px;   
 }
-.resume_section .fa{
+.resume_section .fa,.main_profile .info .fa{
     font-size:18px;
     color:blue;
     cursor: pointer;
@@ -1053,4 +1053,23 @@ input[type=radio],input[type=checkbox]{
 }
 .status-actions .divider{
     margin:5px 10px;
+}
+
+.main_profile a{
+    font-size: 14px;
+    margin: 5px 0px;
+    display: block;
+}
+.qna-box{
+    padding: 10px 0px;
+}
+.qna_container{
+    padding: 10px 0px 0px;
+}
+.qna{
+    font-size: 14px;
+}
+.qna .question{
+    font-weight: bold;
+    margin-bottom: 5px;
 }
